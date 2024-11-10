@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Επικοινωνία</title>
+</head>
+
+<body>
+
+<form method="get" action="http://localhost/lab3.php" enctype="multipart/form-data">
+<table border=0>
+<tr><td><b>Ονοματεπώνυμο:</b></td><td><input type="text" size="50"  name="name" value="π.χ Πουλιανίτη Ελευθερία"/></td></tr>
+
+<tr><td><b>Θέμα επικοινωνίας:</b><br/></td><td>
+<p><input type="checkbox" name="ginfo value="1" checked="checked" />Γενικές Πληροφορίες<br/>
+<input type="checkbox" name="sinfo" value="2"/>Ειδικές πληροφορίες <br/>
+<input type="checkbox" name="interview" value="3" />Συνέντευξη</td></tr>
+
+<tr><td><b>Ηλιακή ομάδα:</b></td><td>
+<p><select name="age">
+<option value="A1" selected="selected">18-21</option>
+<option value="A2" >22-25</option>
+<option value="A3">25-30</option>
+<option value="A4">άνω των 30</option>
+</select></td></tr>
+
+<tr><td><b>Εκπαίδευση: </b></td><td><br />
+<input type="radio" name="education" value="NO" />Λύκειο<br />
+<input type="radio" name="education" value="BACHELOR" checked="checked" />Πτυχιο<br/>
+<input type="radio" name="education" value="MASTER" />Μεταπτυχιακό<br />
+<input type="radio" name="education" value="PHD" />Διδακτορικό<br /><br /></td></tr>
+
+
+<tr><td><b>CV:</b></td><td> <br /><input type="file" name="cvfile" id="cvfile"/><br/><br /></td></tr>
+
+<tr><td><b>Μήνυμα:</b></td><td><br /><textarea name="message"></textarea><br /></td></tr>
+
+<tr><td><b>Ημερομηνία:</b></td><td><br /><input type="text" name="cdate" value="2021-11-1"/><br /></td></tr> 
+
+<tr><td></td><td><br /><input type="submit" name="submit" value="Αποστολή"/><br /></td></tr></table>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>students database</title>
+    </head>
+
+    <body>
+        <p>
+            <b>Insert students data</b>
+        </p>
+        <form method="post" action="studInsert.php" enctype="multipart/form-data">
+            <p>
+                <b>ΑΜ:</b><input type="int" size="10"  name="AM" value=""/><br>
+                <b>Name:</b><input type="text" size="10"  name="NAME" value=""/><br>
+                <b>Surname:</b><input type="text" size="10"  name="SURNAME" value=""/><br>
+                <b>Father's name:</b><input type="text" size="10"  name="FNAME" value=""/><br>
+                <b>Import year:</b><input type="int" size="10"  name="YEAR" value=""/><br>
+                <br><input type="submit" name="submit" value="submit"/>
+            </p>
+        </form>
+        <p>
+            <br><a href="studList.php">See list</a>
+        </p>
+    </body>
+</html>
